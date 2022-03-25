@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-tofit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="stylesheet" href="lab2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <title> BLue FLoral Dress </title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="main">
+            <div class="header ">
+                <div class="header_logo">
+                    <img src="logo.png" height="88px" alt="">
+                </div>
+                <h1> Company</h1>
+                <a href="#"> <img src="fb.jpg" height="47px" class="icon1"></a>
+                <a href="#"> <img src="insta.jpg" height="49px" class="icon2"></a>
+                <form id="form">
+                    <input type="search" id="query" name="q" placeholder="Search...">
+                    <button><i class="fa fa-search"></i></button>
+                </form>
+            </div>
+            <div class="row">
+                <div class="aside">
+                    <div class="category"> Electronics</div>
+                    <div class="category">Health & Beauty</div>
+                    <div class="category"> Men's Fashion</div>
+                    <div class="category"> Women's Fashion</div>
+                    <div class="category"> Sports</div>
+                    <div class="category"> Groceries</div>
+                    <div class="scrollbar" id="scrollbar">
+                        <h2 text-align="center">News Bar</h2>
+                        ⭐️HAPPY DASHAIN ⭐️SALE ⭐️NEW
+                        ARRIVALS
+                        <span id="dots">...</span>
+                        20-40% off on your entire order<br>
+                        <p>we have decided to put a discount on every item available.<br>
+                        The discount ranges for each item categories.<br>
+                        HURRY UP!!!<br>
+                        This is your time to grab the product you always wanted to!
+                        we have decided to put a discount on every item available.<br>
+                        The discount ranges for each item categories.<br>20-40% off on your entire order<br>
+                        <p>we have decided to put a discount on every item available.<br>
+                        The discount ranges for each item categories.<br>
+                        HURRY UP!!!<br>
+                     
+                            <span id="more">
+                                20-40% off on your entire order<br>
+                        <p>we have decided to put a discount on every item available.<br>
+                        The discount ranges for each item categories.<br>
+                        HURRY UP!!!<br>
+                        This is your time to grab the product you always wanted to!
+                        we have decided to put a discount on every item available.<br>
+                        The discount ranges for each item categories.<br>20-40% off on your entire order<br>
+                        <p>we have decided to put a discount on every item available.<br>
+                        The discount ranges for each item categories.<br>
+                        HURRY UP!!!<br>
+                        This is your time to grab the product you always wanted to!
+                        we have decided to put a discount on every item available.<br>
+                        The discount ranges for each item categories.<br>
+
+                            </span>
+                        </p>
+                        </br>
+                        <button onclick="myFunction()" id="myBtn">Read more</button>
+                    </div>
+                </div>
+                <div class="main2">
+                    <div class="row">
+                        <div class="col1">
+                            <img src="images 1.jpg" alt="" class="single-thumbnail">
+                        </div>
+                        <div class="col2">
+                            <h1 text-align="center">Blue FLoral Dress</h1>
+                            <p> Brand: No Brand </p>
+                            <hr>
+                            <strong>
+                                <h2>Rs: 850</h2>
+                            </strong>
+                            <h3>Quantity
+                                <input type="button" value="-"> 1
+                                <input type="button" value="+">
+                            </h3>
+                            <br><br>
+                            <input type="button" value="Buy Now" class="button1">
+                            <input type="button" value="Add to cart" class="button2">
+                        </div>
+                    </div>
+                    <div class="col3">
+                        <p><b> Delivery Options</b> </p>
+                        <i class="fa fa-map-marker"></i> Delivery Location: Kathmandu,Nepal<br> <hr></br>
+                        <i class="fas fa-truck"></i> Home Delivery Rs.50<br> 1-5 days<hr></br>
+                        <i class="fas fa-money-bill"></i> Cash on Delivery Available<hr>
+                        <p> <i class="fas fa-certificate"> </i><b> Return & Warranty </b></p>
+                        100% Authentic
+                        7 Days Returns<br>
+                        <i>Change of mind is not applicable</i><hr>
+                        Warranty not available<hr>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function myFunction() {
+            var sb = document.getElementById("scrollbar");
+            var dots = document.getElementById("dots");
+            var moreText = document.getElementById("more");
+            var btnText = document.getElementById("myBtn");
+            if (dots.style.display === "none") {
+                sb.className = "scrollbar hide";
+                dots.style.display = "inline";
+                btnText.innerHTML = "Read more";
+                moreText.style.display = "none";
+            } else {
+                sb.className = "scrollbar show";
+                dots.style.display = "none";
+                btnText.innerHTML = "Read less";
+                moreText.style.display = "inline";
+            }
+        }
+    </script>
+</body>
+
+</html>
